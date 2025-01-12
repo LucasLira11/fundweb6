@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>PCWeb2022 - Atividade de Recuperação 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>02. Lab JavaScript - Numbers</h1>
+    </header>
+    <main>
+        <section>
+            <h4>1. Computador de bordo</h4>
+            <label>Informe quanto de dinheiro você tem:</label>
+            <input id="q01-dinheiro" type="number" placeholder="Exemplo: 50">
+            <button onclick="calcularCombustivel()">Calcular</button>
+            <ul id="q01-resultado"></ul>
+        </section>
+        <section>
+            <h4>2. Calculadora de IMC</h4>
+            <label>Peso (kg):</label>
+            <input id="q02-peso" type="number" step="0.1" placeholder="Exemplo: 70">
+            <label>Altura (m):</label>
+            <input id="q02-altura" type="number" step="0.01" placeholder="Exemplo: 1.75">
+            <button onclick="calcularIMC()">Calcular</button>
+            <ul id="q02-resultado"></ul>
+        </section>
+        <section>
+            <h4>3. Simulação de lançamentos de dados</h4>
+            <button onclick="simularDados()">Simular</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Face</th>
+                        <th>Ocorrências</th>
+                        <th>Frequência (%)</th>
+                    </tr>
+                </thead>
+                <tbody id="q03-resultado"></tbody>
+            </table>
+        </section>
+        <section>
+            <h4>4. Inversor de Nomes</h4>
+            <label>Digite um nome:</label>
+            <input id="q04-nome" type="text">
+            <button onclick="adicionarNome()">Adicionar</button>
+            <button onclick="inverterNomes()">Inverter</button>
+            <ul id="q04-lista"></ul>
+            <h5>Nomes Invertidos:</h5>
+            <ul id="q04-invertido"></ul>
+        </section>
+        <section>
+            <h4>5. Palíndromo</h4>
+            <label>Digite uma palavra:</label>
+            <input id="q05-palavra" type="text">
+            <button onclick="verificarPalindromo()">Verificar</button>
+            <p id="q05-resultado"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
